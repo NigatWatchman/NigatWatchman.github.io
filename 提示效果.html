@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.a{
+				color: #4C9372;
+				position: relative;
+		}
+		.a::after{
+			content: attr(title);	
+			transition: all 2s;
+			word-break: keep-all;
+			padding-left: 3px;
+			padding-right: 3px;
+			opacity: 0;
+			position: absolute;
+			left:calc(20%);
+			color: white;
+			border-radius: 8px;
+		}
+		 .a:hover::after{
+			background-color: #000000;
+			position: absolute;
+			word-break: keep-all;
+			bottom: 0px;
+			left: calc(120%);
+			opacity: 1;
+		}
+		</style>
+	</head>
+	<body>		
+		    <p>请大家实现课堂上的工具<span class="a" title="重要">
+			提示效果</span>，最好传到<span class="a" title="重要">
+			github page</span>，本帖回复链接地址。
+			</p>		
+	</body>
+</html>
